@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,400&family=Work+Sans:wght@100;300;500&display=swap');
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color: #ff7e44;
+    --secondary-color: #034b5a;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+p,a,li,label,input{
+    font-family: 'Work Sans', sans-serif;
+}
+/* EStilos Header o Cabesera */
+header{
+    position: relative;
+    width: 100%;
+}
+header nav{
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 5px 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: .4s;
+    padding: 5px;
+    font-size: 18px;
+}
+
+ul li a:hover{
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+
+ul li:nth-child(6) a{
+    background: var(--secondary-color);
+    padding: 20px 20px;
+    color: #fff;
+}
+
+ul li:nth-child(6) a:hover{
+    border: 0;
+    background: var(--primary-color);
+}
+
+header #hero{
+    width: 100%;
+    background: url("../Imagenes/1/hero.png");
+    background-size: cover;
+    padding: 230px 0 180px;
+}
+
+#hero h1{
+    color: #fff;
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+#hero p{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button{
+    cursor: pointer;
+    /* border-radius: 40%; */
+}
+
+#hero .btn-primary{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 20px 40px;
+    font-weight: 500;
+    border: 0;
+}
+
+#hero .btn-secondary{
+    color: var(--primary-color);
+    padding: 20px 40px;
+    font-weight: 500;
+    border: 0;
+    text-decoration: underline;
+    background: transparent;
+}
+
+
+/* Estilos Main o principal */
+
+main{
+    position: relative;
+    width: 100%;
+}
+
+main #section1{
+    background: #ffffff;
+    position: relative;
+    width: 100%;
+    padding-bottom: 140px;
+}
+
+#section1 .fila article{
+    padding: 40px 50px;
+    text-align: left;
+    box-shadow: 0px 4px 8px -5px #999999;
+}
+#section1 .fila article h2 img{
+    width: 60px;
+    margin-right: 20px;
+}
+#section1 .fila article:nth-child(1){
+    background: #ffffff;
+}
+#section1 .fila article:nth-child(1) h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#section1 .fila article:nth-child(1) p{
+    padding-left: 80px;
+    margin-bottom: 15px;
+}
+
+#section1 .fila article:nth-child(1) button{
+    background: transparent;
+    border: 0;
+    color: var(--primary-color);
+    padding: 8px 20px;
+    font-weight: 600;
+    border-left: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+    margin-left: 80px;
+}
+
+#section1 .fila article{
+    padding: 40px 50px;
+    text-align: left;
+    box-shadow: 0px 4px 8px -5px #999999;
+}
+#section1 .fila article h2 img{
+    width: 60px;
+    margin-right: 20px;
+}
+#section1 .fila article:nth-child(2){
+    background: var(--secondary-color);
+}
+#section1 .fila article:nth-child(2) h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+#section1 .fila article:nth-child(2) p{
+    padding-left: 80px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+#section1 .fila article:nth-child(2) button{
+    background: transparent;
+    border: 0;
+    color: var(--primary-color);
+    padding: 8px 20px;
+    font-weight: 600;
+    border-left: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+    margin-left: 80px;
+}
+#section1 .welcome{
+    padding-top: 200px;
+}
+#section1 .welcome article{
+    box-shadow: 0 0 0 0 transparent;
+}
+
+#section1 .welcome .info{
+    width: 45%;
+    padding-right: 30px;
+}
+
+.welcome .info h3{
+    font-size: 40px;
+}
+
+.welcome .info h3 b{
+    color: var(--primary-color);
+}
+
+#section1 .welcome .info p{
+    padding-left: 0 !important;
+    margin-top: 14px;
+    font-weight: 400;
+}
+
+#section1 .welcome article.info button{
+    background: #f5f5f5;
+    color: var(--secondary-color);
+    padding: 12px 40px;
+    margin-left: 0;
+    border: 0;
+}
+
+#section1 .welcome article.fotos{
+    position: relative;
+    background: transparent;
+}
+
+.welcome article.fotos div{
+    position: absolute;
+    z-index: 999;
+    bottom: -50px;
+    left: -40px;
+}
+
+.destacados{
+    position: absolute;
+    top: -40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+#section2{
+    background: #f5f5f5;
+    padding: 120px 0px 210px;
+    width: 100%;
+    position: relative;
+}
+
+
+#section2 .info-section2{
+    width: 60%;
+}
+
+#section2 .info-section2 h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#section2 .info-section2 h3 b{
+    color: var(--primary-color);
+}
+
+#section2 .info-section2 p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#section2 .fila button{
+    background: var(--secondary-color);
+    padding: 20px 40px;
+    color: #fff;
+}
+
+#section2 .fila button:hover{
+    border: 0;
+    background: var(--primary-color);
+}
+
+#section2 .fila .card{
+    width: 30%;
+    max-width: 290px;
+    padding: 50px;
+    box-shadow: 0px 4px 8px -5px #999999;
+    margin-top: 50px;
+    border-bottom: 4px solid var(--primary-color);
+    background: #ffffff;
+    position: relative;
+}
+
+#section2 .fila .card::after{
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--secondary-color);
+    z-index: 1;
+    transition: 1s;
+}
+
+#section2 .fila .card:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+#section2 .fila .card:hover h4,
+#section2 .fila .card:hover p,
+#section2 .fila .card:hover li{
+    color: #ffffff;
+}
+
+#section2 .fila .card img{
+    width: 60px;
+    z-index: 9;
+    position: relative;
+}
+
+#section2 .fila .card h4{
+    font-size: 25px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    z-index: 9;
+    position: relative;
+    transition: .2s;
+}
+
+#section2 .fila .card p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 9;
+    position: relative;
+    transition: .2s;
+}
+
+#section2 .fila .card ul{
+    padding-left: 20px;
+    margin-top: 14px;
+}
+
+#section2 .fila .card ul li{
+    margin: 10px 0;
+    font-weight: 400;
+    z-index: 9;
+    position: relative;
+    transition: .2s;
+}
+
+#section3 {
+    width: 100%;
+    position: relative;
+    background: url("../Imagenes/1/bg-section.jpg");
+    background-size: cover;
+}
+
+#section3 .fila .card-vertical{
+    width: 25%;
+    padding: 800px 40px 40px;
+    border-right: 1px solid #fff;
+    background: transparent;
+    position: relative;
+}
+
+#section3 .fila .card-vertical:hover{
+    /* background: #db444440; */
+    backdrop-filter: blur(28px);
+}
+
+#section3 .card-vertical h3{
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+#section3 .card-vertical h2{
+    color: #ffff;
+    font-size: 34px;
+    margin-bottom: 24px;
+}
+
+#section3 .card-vertical p{
+    color: transparent;
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+#section3 .card-vertical button{
+    background: #ffffff40;
+    color: #ffffff;
+    border: transparent;
+    padding: 14px 20px;
+    font-size: 18px;
+}
+
+#section3 .card-vertical .info-card{
+    position: absolute;
+    bottom: 30px;
+    transition: .4s;
+}
+
+#section3 .card-vertical:hover .info-card{
+    bottom: 130px;
+
+}
+
+#section3 .card-vertical:hover p{
+    color: #ffffff;
+    transition: .4s;
+}
+
+#section3 .card-vertical:hover button{
+    background: var(--primary-color);
+    transition: .4s;
+}
+
+#section4{
+    width: 100%;
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    color: #ffff;
+    background: var(--secondary-color);   
+}
+
+#section4 h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#section4 b{
+    color: var(--primary-color);
+}
+
+#section4 p{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px;
+}
+
+#section5{
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+}
+
+#section5 h2{
+    font-size: 34px;
+}
+
+#section5 h2 b{
+    color: var(--primary-color);
+}
+
+#section5 p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#section5 .card-metas{
+    width: 25%;
+    text-align: center;
+    margin-top: 70px;
+}
+
+#section5 .card-metas i{
+    font-size: 60px;
+    color: var(--primary-color);
+    margin-bottom: 14px;
+    transition: .4s;
+}
+
+#section5 .card-metas:hover i{
+    color: var(--secondary-color);
+}
+
+#section5 .card-metas h3{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    color: var(--secondary-color);
+}
+
+#section5 .card-metas h4{
+    font-size: 26px;
+    margin-bottom: 14px;
+}
+
+footer{
+    padding: 40px 0;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+footer .container{
+    border-top: 1px solid #999999;
+    padding-top: 20px;
+}
+
+/* Table */
+
+@media screen and (Max-width: 820px){
+    header nav{
+        position: relative;
+    }
+    nav .fila{
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    ul li a{
+        font-size: 16px;
+    }
+    ul li:nth-child(6) a{
+        padding: 13px 16px;
+    }
+    header #hero{
+        padding: 100px 20px;
+    }
+    #hero h1{
+        font-size: 35px;
+    }
+    #hero p{
+        font-size: 16px;
+    }
+    .fila.destacados{
+       display: block;
+       position: relative;
+    }
+    #section1 .welcome {
+        padding-top: 14px;
+    }
+    #section1 .welcome article.fotos img{
+        width: 220px;
+    }
+    #section1 .welcome article.fotos div img{
+        width: 150px;
+    }
+    #section1 .welcome article.fotos div{
+        bottom: -9;
+        left: -17;
+    }
+    .welcome .info h3 {
+        font-size: 35px;
+    }
+    #section2 {
+        padding: 60px 0px 105px;
+    }
+    #section2 .info-section2{
+        width: 60%;
+        margin: 0 auto;
+    }
+    #section2 .info-section2{
+        padding-left: 20px;
+    }
+    #section2 .fila button{
+        margin-right: 20px;
+    }
+    #section2 .fila .card{
+        padding: 30px;
+        margin: 40px 6px 0;
+    }
+    #section2 .fila .card h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    #section3{
+        display: none;
+    }
+    #section4 p{
+        padding: 0 20px;
+    }
+    #section4 h2{
+        font-size: 35px;
+    }
+    #section4 .card-metas h4{
+        font-size: 16px;
+    }
+}
+
+/* Phone */
+
+@media screen and (max-width: 520px){
+    header nav{
+        position: relative;
+    }
+    nav .fila{
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+    nav ul{
+        display: block;
+    }
+    nav ul li{
+        padding: 10px 0;
+    }
+    ul li a{
+        font-size: 18px;
+    }
+    ul li:nth-child(6) a{
+        padding: 13px 16px;
+    }
+    header #hero{
+        padding: 80px 10px;
+        text-align: center;
+    }
+    #hero .btn-secondary{
+        padding: 20px;
+    }
+    #hero h1{
+        font-size: 35px;
+    }
+    #section .fila article{
+        padding: 30px 8px;
+    }
+    #hero p{
+        font-size: 16px;
+    }
+    .fila.destacados{
+       display: block;
+       position: relative;
+    }
+    #section1 .welcome {
+        padding-top: 14px;
+        display: block;
+    }
+
+    #section1 .welcome .info{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    #section1 .welcome article.fotos img{
+        width: 300px;
+    }
+    #section1 .welcome article.fotos{
+        text-align: center;
+    }
+    #section1 .welcome article.fotos div img{
+        width: 200px;
+    }
+    .welcome article.fotos div{
+        bottom: -45px;
+        left: 7px;
+    }
+    .welcome .info h3 {
+        font-size: 35px;
+    }
+    #section2 {
+        padding: 60px 0px 105px;
+    }
+    #section2 .fila{
+        display: block;
+        /* text-align: center; */
+    }
+    #section2 .info-section2{
+        padding-left: 20px;
+    }
+    #section2 .fila button{
+        margin-right: 20px;
+        margin: 20px auto;
+        display: block;
+    }
+    #section2 .info-section2 h3{
+        font-size: 35px;
+    }
+    #section2 .fila .card{
+        padding: 30px;
+        margin: 40px 6px 0;
+        width: 72%;
+        margin: 0 auto;
+    }
+    #section4{
+        padding: 50px 0;
+    }
+    #section2 .fila .card h4{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    #section3{
+        display: none;
+    }
+    #section4 p{
+        padding: 0 20px;
+    }
+    #section4 h2{
+        font-size: 25px;
+    }
+    #section5 .card-metas h4{
+        font-size: 16px;
+    }
+    #section5{
+        padding: 40px 0;
+    }
+    #section5 .fila{
+        display: block;
+    }
+    #section5 .card-metas{
+        width: 90%;
+        margin: 35px auto;
+    }
+}
